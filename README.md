@@ -2,10 +2,6 @@
 
 A research tool that rebuilds an opening-range trading system on historical futures bars (NQ and GC), searches its parameters on a **training period only**, and then decides which trading sessions to keep or filter out, confirming the decision on a **held-out test period**.
 
-The goal is not to find a profitable strategy. It is to test an idea in a way that makes false positives hard to miss. The design follows one rule: never trust a result that only looks good on the data used to choose it.
-
-The system mirrors a TradingView Pine Script indicator (`nq_regime_system.pine`, not included).
-
 ## How it works
 
 1. **Rebuild the logic on history.** Three sessions (Asia, London, New York), each with its own opening range, an expansion-block rule, regime filters, an entry strategy, and simulated trade management (stop, target, time stop, trailing).
