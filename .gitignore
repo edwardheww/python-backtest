@@ -1,0 +1,28 @@
+# Virtual environments
+.venv/
+nqenv/
+venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Licensed / downloaded market data (not redistributable)
+.databento_cache/
+*.pkl
+*.parquet
+nq_1m.csv
+gc_1m.csv
+nq_5m.csv
+gc_5m.csv
+
+# Outputs that contain prices derived from licensed data
+daily_metrics.csv
+cal_*_trades.csv
+
+# Secrets
+.env
+.env.*

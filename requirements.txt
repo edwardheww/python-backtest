@@ -1,0 +1,12 @@
+# Core (calibrate_sessions.py, calibrate_regimes.py, download_databento.py)
+numpy
+pandas
+
+# Parquet input for calibrate_sessions.py (only needed if you pass .parquet files)
+pyarrow
+
+# Free Yahoo Finance smoke-test data (download_test_data.py, calibrate_regimes.py without --csv)
+yfinance
+
+# Paid historical data (download_databento.py only)
+databento
